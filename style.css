@@ -1,0 +1,115 @@
+/*============grid-wrapper===========*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.body-bg {
+  background-image: url(/images/bg-pattern-top-mobile.svg),
+    url(/images/bg-pattern-bottom-mobile.svg);
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.grid-wrapper {
+  margin: 0 5%;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1em;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.grid-wrapper > :nth-child(n + 2) {
+  background: hsl(300, 43%, 22%);
+  border-radius: 0.5em;
+  padding: 10px 30px 15px 30px;
+}
+
+/*============clients-review===========*/
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-pic {
+  border-radius: 4em;
+  width: 45px;
+  height: 45px;
+  margin: 25px 25px 0 0px;
+}
+
+.clients-name {
+  color: white;
+  margin: 25px 0 5px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.verified {
+  font-size: 14px;
+  margin: 0px;
+  font-weight: 400;
+  color: hsl(333, 80%, 67%);
+}
+
+.clients-review {
+  color: white;
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+/*==============header-introduction============*/
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.description-holder {
+  margin-bottom: 30px;
+}
+
+.description {
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 23px;
+  padding: 0 5px;
+  color: hsl(303, 10%, 53%);
+}
+
+.heading {
+  padding: 0 5px;
+  margin: 20px 0 20px 0;
+  text-align: center;
+  color: hsl(300, 43%, 22%);
+  font-size: 30px;
+  font-weight: 700;
+}
+/*============5-star-review=========== */
+.rating {
+  margin: 10px 0 0 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+
+.star-rev-container > :nth-child(-n + 3) {
+  text-align: center;
+  background: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  padding: 15px 0;
+  margin: 1em 0 1em 0;
+}
