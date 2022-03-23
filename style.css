@@ -37,6 +37,23 @@ body {
 }
 
 /*============clients-review===========*/
+.Colton {
+  background-image: url(/images/image-colton.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Irene {
+  background-image: url(/images/image-irene.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.anne {
+  background-image: url(/images/image-anne.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .profile-info {
   display: flex;
@@ -44,7 +61,7 @@ body {
 }
 
 .profile-pic {
-  border-radius: 2rem;
+  border-radius: 4em;
   width: 45px;
   height: 45px;
   margin: 25px 25px 0 0px;
